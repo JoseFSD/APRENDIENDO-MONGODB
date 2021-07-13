@@ -1,0 +1,32 @@
+INSTALAR MONGODB (windows)
+
+1. Entramos en https://www.mongodb.com
+2. Sección productos / mongodb server / download mongodb / versión community server (que es la gratuita)
+3. Descargamos indicamos sistema operativo y el tipo de archivo que queremos descargarlo
+    3.1 Una vez descargamos, ejecutamos y elegimos instalación completa
+    3.2 Te pedirá instalar mongoDB compass, que es un framework equivalente al workbench en mysql
+
+CONFIGURAR MONGODB (windows)
+
+4. Abrimos una terminal dentro de c:\program files\MongoDB\server\4.0 (o la versión que tengas instalada)\bin
+5. Creamos una carpeta en C:\data\mongodb4 (con el nombre de la version que sea)\db
+6. Abrimos nuevamente una terminal ubicados en el path anterior C:\data\mongodb4\db
+7. Ejecutamos el comando "mongod --dbpath C:\data\mongodb4\db", aquí es donde se van a guardar los datos del servicio
+
+EJECUTANDO SERVICIO
+
+8. Abrimos otra consola en el siguiente path c:\program files\MongoDB\Server\4.0\bind
+9. Y dentro de ese path ejecutamos el comando "mongo"
+
+ALGUNOS COMANDOS MONGODB (desde consola)
+10. Nos cambiamos a la consola otra consola (donde tenemos ejecutado mongod) y comenzamos con algunos comandos:
+    10.1 show dbs --> para ver las base de datos que tenemos
+    10.2 use testDB --> te cambia a la base de datos de ese nombre, si no existe te la crea vacía
+        10.2.1 Si estás usando varias bases de datos y quieres referirte a esta que acabamos de crear deberemos referirnos a ella para
+        crear colecciones, por ejemplo "testDB.create({})"
+        10.2.2 si estamos usando la base de datos, no hace falta refererirnos a la base de datos, puesto que la estamos usando. por
+        ejemplo: "db.create({})". Solo escribimos "db."
+
+    10.3 db.coll.insert({"nombre": "Juan", "edad": 34}) --> inserta un documento (fila) en la colección de nombre "coll", si no existe lo crea
+    10.4 db.coll.find() --> nos devuelve todo el contenido de la colección, con el _id que lo asigna automáticamente mongoDB, sin tener que crear un campo id como en mysql
+

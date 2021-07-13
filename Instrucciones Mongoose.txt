@@ -1,0 +1,9 @@
+CONECTAMOS MONGODB UTILIZANDO MONGOOSE DESDE NODEJS
+
+1. Primer paso, crear nuestro proyecto con "npm init" / express / express generator
+2. Instalar nuestra librería de mongoose  --> "npm install mongoose"
+3. Creamos nuestro archivo app.js
+    3.1 requerimos mongoose
+    3.2 creamos la conexión a la base de datos
+    3.3 acudimos siempre a la documentación de mongoose para crear la conexión, sobre todo por revisar
+    que todo siga igual o puede que hayan actualizado o recomienden hacer las cosas de forma diferente
