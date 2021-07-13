@@ -4,6 +4,11 @@ En este pequeño curso aprendemos a:
   - Instalar "mongoDB"
   - Instalar la librería / módulo "mongoose" desde NODEJS
   - Interactuar con la base de datos no relacional (NO SQL) mongoDB desde nodejs
+        1. Conecxión a la base de datos
+        2. Creación de una Schema (colección)
+        3. Creación de un modelo de datos en mongoDB
+        4. Búsqueda en la DB utilizando los diferentes métodos de mongoDB, operadores de comparación, operadores lógicos y expresiones regulares
+        5. CRUD completo de una colección en mongoDB (Creación, lectura, actualización y borrado de documentos)
 
 Recomendaciones:
 1. Seguir las instrucciones del documento "Instrucciones mongoDB.txt", ya que nos indicará cómo instalar MongoDB en nuestro equipo bajo S.O. Widnows
